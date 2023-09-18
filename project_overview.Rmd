@@ -1,0 +1,60 @@
+---
+title: "Project overview"
+author: "James G. Hagan"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Temporal variability of the Byforden deep fluorescence layer
+
+Based on chromatography measurements, the microbes that are probably responsible for the fluorescence layer at 20 m are anoxygenic phototrophic bacteria. Specifically, given the abundance of chlorophyll e that was found, the bacteria are likely to be members of the Chlorobiota (the green sulphur bacteria). Moreover, the fluorescence layer at 20 m depth coincides with very low oxygen levels that were measured there.
+
+The Chlorobiota are interesting because they are able to photosynthesise (i.e. fix carbon using light energy) just like plants and cyanobacteria. But, instead of using water (H2O) as the electron donor, they use sulphide ions. Moreover, the Chlorobiota have extremely dense photosynthetic apparatus which means that they are able to grow in much lower light conditions than the more typical phytoplankton. This ability to grow in low light conditions combined with sulphide ions seeping up to the surface from the sediments in Byforden probably explains this subsurface fluorescence layer.
+
+### Aims:
+
+In this project, we will examine the temporal variation of Byforden’s deep fluorescence layer using at least five years of CTD data. We will attempt to answer the following questions:
+
+1.	How variable is the deep fluorescence layer in Byforden? Do we always find it at the same depth or, for example, is it deeper or shallower in some years?
+
+2.	Similarly, does it vary in strength between years?
+
+3.	Are there local weather or oceanographic conditions that could explain variation in depth and strength? For example, turbid surface conditions could cause the layer to get shallower.
+
+These are the basic questions but, during the analysis, we might come up with many other sub-questions that we could explore.
+
+Finally, it would be interesting to check the literature to see if this pattern has been found in other areas. We can then, for example, make a map of locations of the phenomenon across the world with the depth that it occurs at.
+
+### How to do this?
+
+We will need to collate and clean all the relevant data for this project which will involve sorting through the files generated during the past five MAR440 BOX project cruises. I’ve collated all the raw data but it is up to you to clean all this data, make sure all the data are in a common format, add any relevant metadata (e.g. latitude-longitude coordinates, dates, nutrient concentrations if available etc.).
+
+Then, I suggest we download the oceanographic data from the nearby station run by SMHI. This will allow us to examine if the variability in the fluorescence layer is linked to some of these oceanographic variables.
+
+These two tasks are the most important for this project. This is what we need to focus on before we can start answering some of our questions.
+
+I suggest we do this via a Github repository so that all the scripts that are used to process the data are available. We hope to publish some of this data and this effort of collation will be very important for that paper so we should do our best to do it properly.
+
+### Data cleaning
+
+Come up with a data structure that you want to use and you should all follow it when cleaning the data. I suspect that you will want to split up the data cleaning among you (but you can figure out how to manage this).
+
+### Variable naming conventions
+
+When cleaning data, it’s important that we do our best to make these data available and usable for future workers. That means following certain conventions:
+
++ 1.	No special characters in the data or in the variable names (e.g. ?, !, € etc.)
++ 2.	No blank spaces in the data on in the variable names (i.e. use underscores or hyphens instead)
++ 3.	No capital letters
++ 4.	Common units of measurements for all variables across the five years
++ 5.	Common calibration of all measurements of all variables across the five years
+
+### Github repository
+
+I think it will be easiest if we use a Github repository to make sure all the code used to process the data is available. Specifically, make a separate folder for each year and store all the scripts in that folder. 
+
+Once the data are cleaned, we export cleaned versions, merge them across years and then we will have complete data.
