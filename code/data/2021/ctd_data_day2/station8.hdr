@@ -1,0 +1,26 @@
+* Sea-Bird SBE 9 Data File:
+* FileName = C:\Users\CTD-User\Desktop\MAR440\day2\station8.hdr
+* Software Version Seasave V 7.26.2.13
+* Temperature SN = 6313
+* Conductivity SN = 4758
+* Number of Bytes Per Scan = 37
+* Number of Voltage Words = 4
+* Number of Scans Averaged by the Deck Unit = 1
+* System UpLoad Time = Sep 22 2021 13:34:12
+* NMEA Latitude = 58 19.53 N
+* NMEA Longitude = 011 50.68 E
+* NMEA UTC (Time) = Sep 22 2021 11:34:11
+* Store Lat/Lon Data = Append to Every Scan
+* SBE 11plus V 5.1d
+* number of scans to average = 1
+* pressure baud rate = 9600
+* NMEA baud rate = 4800
+* GPIB address = 1
+* advance primary conductivity  0.073 seconds
+* advance secondary conductivity  0.073 seconds
+* S>
+** Ship: Skagerrak
+** Station: station8
+** Operator: group1
+* System UTC = Sep 22 2021 11:34:12
+*END*
