@@ -25,8 +25,8 @@ ctd_data_2021 <- data_2021[!is.na(data_2021[, "flECO-AFL"]), ]
 data_2022 <- read_csv("2022_fixed_depth.csv")
 ctd_data_2022 <- data_2022[!is.na(data_2022[, "flECO-AFL"]), ]
 
-#data_2023 <- read_csv("2023_fixed_depth.csv")
-#ctd_data_2023 <- data_2023[!is.na(data_2023[, "flECO-AFL"]), ]
+data_2023 <- read_csv("2023_fixed_depth.csv")
+ctd_data_2023 <- data_2023[!is.na(data_2023[, "flECO-AFL"]), ]
 
 
 
@@ -35,7 +35,7 @@ mean_fl_2019 <- aggregate(`flECO-AFL` ~ Station, data = ctd_data_2019 , FUN = me
 mean_fl_2020 <- aggregate(`flECO-AFL` ~ Station, data = ctd_data_2020 , FUN = mean)
 mean_fl_2021 <- aggregate(`flECO-AFL` ~ Station, data = ctd_data_2021 , FUN = mean)
 mean_fl_2022 <- aggregate(`flECO-AFL` ~ Station, data = ctd_data_2022 , FUN = mean)
-#mean_fl_2023 <- aggregate(`flECO-AFL` ~ Station, data = ctd_data_2023 , FUN = mean)
+mean_fl_2023 <- aggregate(`flECO-AFL` ~ Station, data = ctd_data_2023 , FUN = mean)
 
 
 #how many row there are in each station
@@ -63,7 +63,8 @@ ncounts_2022
 
 ncounts_2023<- table(ctd_data_2023$Station)
 ncounts_2023
- 
+#ST_1 ST_2 ST_3 ST_4 ST_5 ST_6 
+#101  362  444  449  117  157 
 
 #data set of mean for each station
 mean_chalfix_2019 <- data.frame(chlafix = rep(c(1.0189943, 0.5900618, 1.0756980), #repeating means as many times as the station repeats in the dataset
@@ -83,8 +84,8 @@ mean_chalfix_2021 <- data.frame(chlafix = rep(c(0.005621596, 0.006323961, 0.0067
                                               times = c(425, 384, 327, 129, 133, 443, 424, 451, 180, 191, 162, 381, 420)))
 
 
-#mean_chalfix_2023 <- data.frame(chlafix = rep(c(3.834334, 3.453522, 2.052686, 2.670307, 3.592229, 3.802996),
-#                                              times = c(2354, 11507,  2887,  4908,  1540,  3561)))
+mean_chalfix_2023 <- data.frame(chlafix = rep(c(2.467672, 1.685722, 1.440825, 1.599242, 1.668588, 1.671745),
+                                              times = c(101,  362,  444,  449,  117,  157))) 
 
 #dividing fluorescence by the mean
 ctd_data_2019$`flECO-AFL` <-ctd_data_2019$`flECO-AFL` / mean_chalfix_2019$chlafix
